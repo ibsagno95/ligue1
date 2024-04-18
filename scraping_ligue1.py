@@ -9,8 +9,8 @@ h_debut = time.time()
 nom_fichier = "resultats_ligue1.xlsx"
 path = 'C:/Users/Ibrahima SAGNO/Documents/tuto_scraping/resultats_ligue1.xlsx'
 
-debut = 2021
-fin = 2022
+debut = 2012
+fin = 2023
 urls = []
 
 equipes_dict = {"saisons":[],
@@ -19,7 +19,7 @@ equipes_dict = {"saisons":[],
                              "score":[],
                              "equipe_ext":[]}
 
-while debut <= fin:
+while debut <= fin-1:
     day = 1  # Réinitialiser day à 1 à chaque itération de la boucle externe
     while day <= 38:
         saison = str(debut) + "-" + str(debut + 1)
